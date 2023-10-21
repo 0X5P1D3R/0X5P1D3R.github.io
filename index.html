@@ -3,29 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Hacker Website</title>
+    <title>My Website</title>
     <style>
-        body {
-            background-color: black;
-            color: green;
-            font-family: 'Courier New', Courier, monospace;
+        .terminal {
+            font-family: monospace;
+            white-space: pre;
+        }
+
+        .blink {
+            animation: blink-animation 1s steps(5, start) infinite;
+        }
+
+        @keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
         }
     </style>
 </head>
 <body>
-    <pre>
-	
-	</div>
-        <code>
-        <span style="color: white;">~$</span> <span style="color: lime;">echo</span> <span style="color: cyan;">"Welcome to my Web"</span>
-        Welcome to My Web
-        <span style="color: white;">~$</span> <span style="color: lime;">ls</span>
-        README.txt
-        <span style="color: white;">~$</span> <span style="color: lime;">cat</span> <span style="color: cyan;">README.txt</span>
-        find me on twitter : @_5p1der
-        <span style="color: white;">~$</span> 
-        </code>
-    </pre>
+    <div class="terminal">
+        <div>
+            ~$ echo "Welcome to my Web"
+        </div>
+        <div>
+            Welcome to My Web
+        </div>
+        <div>
+            ~$ ls
+        </div>
+        <div>
+            README.txt
+        </div>
+        <div>
+            ~$ cat README.txt
+        </div>
+        <div>
+            find me on twitter : @_5p1der
+        </div>
+        <div class="blink">
+            ~$
+        </div>
+    </div>
 </body>
 </html>
 
