@@ -4,7 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>5P1D3R</title>
-    <style>
+    <style>  
+	 #tryhackme-badge {
+	        position: fixed;
+		top: 10px
+	        left: 10px;
+    	}
+
+    	#hackthebox-badge { 
+		position: fixed;
+	        top: 10px;
+	        right: 10px;
+	}
+
+
         body {
             background-color: black;
             color: green;
@@ -12,17 +25,23 @@
             margin: 0;
         }
 
-        .watermark {
+	.watermark {
             color: green;
-            display: flex;
+            opacity: 0.3; /* Adjust the opacity as needed */
+            position: fixed;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+	    display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            opacity: 0.3; /* Adjust the opacity as needed */
+            opacity: 0.2; /* Adjust the opacity as needed */
             font-family: 'Courier New', Courier, monospace;
             margin-top: -150px;
-        }
-
+	    pointer-events: none;
+            user-select: none;
+	}
         .terminal {
             font-family: monospace;
             white-space: pre;
@@ -60,7 +79,15 @@
             }
         }
     </style>
+	<div class="container">
+    	   <div id="tryhackme-badge">
+	       <script src="https://tryhackme.com/badge/945800"></script>
+	   </div>
 
+	   <div id="hackthebox-badge">
+	       <img src="http://www.hackthebox.eu/badge/image/1157405" alt="Hack The Box">
+	   </div>  
+	</div>
 </head>
 <body>
    <h3 class="center"><pre> 
@@ -73,17 +100,25 @@
    </pre></h3>
    <pre>
       <code>
-  
 	<span style="color: red;">┌──(spider🕷️ju57_m3)-[~]
 	└─$</span> <span style="color: lime;">echo</span> <span style="color: cyan;">"Welcome to My Web"</span>
         Welcome to My Web
+	<span style="color: red;">┌──(spider🕷️ju57_m3)-[~]
+        └─$</span> <span style="color: lime;">whoami</span>
+        5P1D3R
+	<span style="color: red;">┌──(spider🕷️ju57_m3)-[~]
+        └─$</span> <span style="color: lime;">pwd</span>
+        /home
         <span style="color: red;">┌──(spider🕷️ju57_m3)-[~]
-	└─$</span> <span style="color: lime;">ls</span>
-        README.txt
+  	└─$</span> <span style="color: lime;">ls</span>
+        README.txt<span ><a style="color: blue;" href="https://github.com/0X5P1D3R"> My_Tools</a></span>
         <span style="color: red;">┌──(spider🕷️ju57_m3)-[~]
 	└─$</span> <span style="color: lime;">cat</span> <span style="color: cyan;">README.txt</span>
-	JU57 M3 documenting my discovery
+	Welcome to my web, the domain of the ever-curious 5P1D3R🕷️!
+	Here, I gather all the interesting bugs I come acros!
+	click on My_Tools in /home to cd into the directory to see some of the tools i built
         You can find me on nostr @ pubkey: npub1uvck4qvrcjekaastx67ssedadk670x3av4c5p7xwdkp8ezrqnucq6a45mm
+	You can find me on X(twitter):<span><a style="color: cyan" href="https://x.com/0X5P1D3R">@0X5P1D3R </a></span>
         <span style="color: red;">┌──(spider🕷️ju57_m3)-[~]
 	└─$</span><div class="blink" style="display: inline-block; color: white;"> █</div>
  
