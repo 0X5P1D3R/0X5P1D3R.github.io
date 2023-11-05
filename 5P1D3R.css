@@ -1,0 +1,80 @@
+#tryhackme-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    size: 100px;
+}
+
+#hackthebox-badge { 
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    size: 100px;
+}
+
+body {
+    background-color: black;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+.watermark {
+    color: green;
+    opacity: 0.3; 
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+    pointer-events: none;
+    user-select: none;
+}
+.terminal {
+    font-family: monospace;
+    white-space: pre;
+}
+
+.blink {
+    animation: blink-animation 1.3s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .watermark {
+        margin-top: -50px;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    pre {
+        font-size: 14px;
+    }
+}
+.social-icons a {
+    color: green; 
+    background-color: black; 
+    padding: 7px; 
+    border-radius: 7px; 
+    margin: 3px; 
+    text-decoration: none;
+}
